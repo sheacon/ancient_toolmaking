@@ -2,7 +2,7 @@
 
 - The objective of this project is to use data collected from soil samples to identify particles associated with ancient toolmaking sites.
 - After comparing Naive Bayes, Logistic, SVM, and tree-based models, we selected ExtraTrees Classifier as our optimal model.
-- This is a personal fork of a academic group project. Credit to Mubarak Ganiyu, Sydney Simmons, Shuyang Lin, and Weixi Chen for initial work.
+- This is a personal fork of an academic group project. Credit to Mubarak Ganiyu, Sydney Simmons, Shuyang Lin, and Weixi Chen for initial work.
 
 # Background
 The analysis of lithic microdebitage can illuminate ancient stone tool manufacturing practices to provide insight into past cultural activity. In his dissertation, Dr. Markus Eberl studied the small Mayan site of Nacimiento in the Petexbatun region of Guatemala to investigate how a substantial change in regional political power affected the inhabitants and the local community. One aspect of investigating the cultural dynamics in the region during the 7th and 8th centuries is to understand the the public structures and daily community interactions.
