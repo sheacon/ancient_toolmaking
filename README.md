@@ -19,16 +19,3 @@ Samples of microdebitage obtained from current stoneknappers provides a set of e
 Data management is expected to be an challenge and a workflow should be established to enable expeditious usage of the data. Currently, there are 50 soil samples from the Mayan village of interest. The goal is to identify the composition of these soil samples, and the contained particles will be characterized by the PartAn 3D particle analyzer. The particle analyzer measures 40 variables for every particle, and there are approximately ~500,000 particles in every sample. The training data contains 30-50 collected and labelled microdebitage samples collected from modern stoneknappers, and represents the stages of specific work. The two data sources can be seen below:
 - Archaeological Soil Data
 - Lithic Experimental Data
-
-## Data security
-The dataset is for research purpose only and not shared in the public repo.
-
-# Models
-
-
-# Project Notebook Structure
-All *0- (e.g., 10-, 20-, 30-) files contain finalized work for the purpose described (e.g., “process-data”). Subfiles related to the task are *#- (e.g., 11-, 12-)
-
-
-
-
