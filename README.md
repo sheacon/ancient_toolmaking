@@ -1,6 +1,6 @@
 # Ancient Artifacts Project
 
-- The objective of this project is to use data collected from soil samples to identify particles associated with ancient toolmaking sites.
+- This project is a binary classification problem, using data from archaeological samples to distinguish between soil particles and stone microdebitage associated with ancient toolmaking sites.
 - After comparing Naive Bayes, Logistic, SVM, and tree-based models, we selected ExtraTrees Classifier as our optimal model.
 - This is a personal fork of an academic group project. Credit to Mubarak Ganiyu, Sydney Simmons, Shuyang Lin, and Weixi Chen for initial work.
 
