@@ -13,3 +13,4 @@
 
 # compiled imports
 .pyc
+__pycache__/
