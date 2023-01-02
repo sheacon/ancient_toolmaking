@@ -1,11 +1,11 @@
-import pandas as pd
 import numpy as np
-import seaborn as sns
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
+from sklearn.model_selection import cross_val_score, GridSearchCV
 from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
 from sklearn.metrics import confusion_matrix
-from sklearn.model_selection import cross_val_score, GridSearchCV
 
 # load data
 def load_data():
