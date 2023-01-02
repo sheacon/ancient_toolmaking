@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
 from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import cross_val_score, GridSearchCV
 
 # load data
 def load_data():
@@ -29,11 +30,19 @@ def load_data():
 
     return X_train, y_train, X_test, y_test
 
-
-
 # define a function for scoring
-def pred_metrics(real, pred) -> None:
-    print("Accuracy:\t{}".format(accuracy_score(real, pred)))
-    print("Precision:\t{}".format(precision_score(real, pred)))
-    print("Recall:\t\t{}".format(recall_score(real, pred)))
-    print("F1:\t\t{}".format(f1_score(real, pred)))
+def pred_metrics(y_test, y_pred) -> None:
+    print("Accuracy:\t{}".format(accuracy_score(y_test, y_pred)))
+    print("Precision:\t{}".format(precision_score(y_test, y_pred)))
+    print("Recall:\t\t{}".format(recall_score(y_test, y_pred)))
+    print("F1:\t\t{}".format(f1_score(y_test, y_pred)))
+
+def cm_plot(y_test,y_pred):
+    cm = confusion_matrix(y_test, y_pred)
+    sns.heatmap(cm, annot=True, fmt = 'g', cmap = 'Blues')
+
+def f1_cv(model, X_train, y_train):
+    score = cross_val_score(model, X_train, y_train, scoring = "f1")
+    print(score.round(decimals=4))
+    print(score.mean().round(decimals=4))
+    return score
