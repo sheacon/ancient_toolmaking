@@ -2,6 +2,8 @@
 
 - This project is a binary classification problem, using particle analyzer data from archaeological samples to distinguish between ordinary soil particles and stone microdebitage particles associated with ancient toolmaking sites.
 - After optimizing and comparing Logistic, Naive Bayes, SVMs, and tree-based models, XGBoost performs the best on the validation set.
+- Tuning efforts focused on increasing recall while maintaining precision. 
+
 <br>
 <br>
 
