@@ -1,7 +1,7 @@
 # Ancient Artifacts Project
 
 - This project is a binary classification problem, using particle analyzer data from archaeological samples to distinguish between soil particles and stone microdebitage associated with ancient toolmaking sites.
-- After comparing optimizing and comparing Logistic, Naive Bayes, SVMs, and tree-based models, XGBoost performs the best on the validation set.
+- After optimizing and comparing Logistic, Naive Bayes, SVMs, and tree-based models, XGBoost performs the best on the validation set.
 
 ![eda](readme_images/eda.png)
 ![models](readme_images/models.png)
