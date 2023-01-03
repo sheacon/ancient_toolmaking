@@ -8,7 +8,7 @@ from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_sc
 from sklearn.metrics import confusion_matrix
 
 # load data
-def load_data():
+def load_data(verbose=True):
     # load
     train_data = pd.read_csv('data/train_data_fe.csv')
     test_data = pd.read_csv('data/test_data_fe.csv')
@@ -23,10 +23,11 @@ def load_data():
     X_test = test_data.drop(['stone_soil_enc'], axis=1)
     y_test = test_data['stone_soil_enc']
 
-    print('X_train', X_train.shape)
-    print('y_train', y_train.shape)
-    print('X_test', X_test.shape)
-    print('y_test', y_test.shape)
+    if verbose:
+        print('X_train', X_train.shape)
+        print('y_train', y_train.shape)
+        print('X_test', X_test.shape)
+        print('y_test', y_test.shape)
 
     return X_train, y_train, X_test, y_test
 
