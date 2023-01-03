@@ -4,6 +4,7 @@
 - After optimizing and comparing Logistic, Naive Bayes, SVMs, and tree-based models, XGBoost performs the best on the validation set.
 <br>
 <br>
+
 ![eda](readme_images/eda.png)
 ![final_performance](readme_images/.png)
 
