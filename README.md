@@ -17,4 +17,4 @@
 - A particle analyzer was used to provide 40 measurements of each particle.
 
 # Contributions
-- This is an extensively re-worked and extended personal fork of an academic group project. Credit to Mubarak Ganiyu, Sydney Simmons, Shuyang Lin, and Weixi Chen for initial work.
+- This is an extensively re-worked and extended personal fork of a previous academic group project. Credit to Mubarak Ganiyu, Sydney Simmons, Shuyang Lin, and Weixi Chen for initial work.
