@@ -7,9 +7,7 @@
 <br>
 <br>
 
-![eda](readme_images/eda.png)
-
-![final_performance](readme_images/xgboost.png)
+![eda](readme_images/eda.png) ![final_performance](readme_images/xgboost.png)
 
 # Background
 
