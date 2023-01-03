@@ -56,3 +56,38 @@ def cv_metrics(model, X_train, y_train):
     scores = pd.Series(data = [accuracy_score, precision_score, recall_score, f1_score]
                          , index = ['accuracy', 'precision', 'recall', 'f1'])
     return scores
+
+def cv_metrics2(model, X_train, y_train):
+    shuffled_index = np.random.choice(X_train.shape[0], replace = False, size = X_train.shape[0])
+    result = np.array_split(shuffled_index, 5)
+    accuracy = []
+    precision = []
+    recall = []
+    f1 = []
+    for part in result:
+        part_X_train = X_train.drop(part, axis='index')
+        part_y_train = y_train.drop(part, axis='index')
+        part_X_test = X_train.iloc[part]
+        part_y_test = y_train.iloc[part]
+        model.fit(part_X_train,part_y_train)
+        part_y_pred = model.predict(part_X_test)
+        tn, fp, fn, tp = confusion_matrix(part_y_test,part_y_pred).ravel()
+        accuracy_score = (tp+tn)/(tp+tn+fp+fn)
+        accuracy.append(accuracy_score)
+        precision_score = tp/(tp+fp)
+        precision.append(precision_score)
+        recall_score = tp/(tp+fn)
+        recall.append(recall_score)
+        f1_score = 2*(precision_score*recall_score)/(precision_score+recall_score)
+        f1.append(f1_score)
+    scores = pd.Series(data = [np.asarray(accuracy).mean()
+                                ,np.asarray(precision).mean()
+                                ,np.asarray(recall).mean()
+                                ,np.asarray(f1).mean()]
+                         , index = ['accuracy', 'precision', 'recall', 'f1'])
+    return scores
+
+
+
+
+
